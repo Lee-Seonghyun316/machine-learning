@@ -21,11 +21,12 @@ import matplotlib.pyplot as plt
 from matplotlib import colors
 
 # np.random.rand = uniform random generation, [0, 1]
-# np.random.randn = normal random generation, N(0, 1)
+# np.random.randn = normal random generation, N(0, 1), 정규분포 난수
 r1 = 10*(np.random.rand(2,2) - 0.5) # [-1, 1]
 r2 = 10*(np.random.rand(2,2) - 0.5) # [-1, 1]
 r3 = 10*(np.random.rand(2,2) - 0.5) # [-1, 1]
 
+#target value
 t1 = 50*(np.random.rand(2,1) - 0.5)
 t2 = 50*(np.random.rand(2,1) - 0.5)
 t3 = 50*(np.random.rand(2,1) - 0.5)
@@ -49,10 +50,6 @@ x = np.hstack((x1, x2, x3))
 
 plt.figure(figsize = (5,5))
 plt.plot(x[0,:],x[1,:],".",markersize = 1, color = [0.75, 0.75, 0.75])
-# -
-
-
-
 # +
 D = 2
 K = 3
